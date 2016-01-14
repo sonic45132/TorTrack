@@ -1,0 +1,1672 @@
+[TransmissionApi 2016-01-14 01:01:38] get_torrents
+[TransmissionApi 2016-01-14 01:01:38] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:01:38] post_body:
+[TransmissionApi 2016-01-14 01:01:38] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:01:38] ------------------
+[TransmissionApi 2016-01-14 01:01:38] response.code: 409
+[TransmissionApi 2016-01-14 01:01:38] response.message: Conflict
+[TransmissionApi 2016-01-14 01:01:38] response.body_raw:
+[TransmissionApi 2016-01-14 01:01:38] <h1>409: Conflict</h1><p>Your request had an invalid session-id header.</p><p>To fix this, follow these steps:<ol><li> When reading a response, get its X-Transmission-Session-Id header and remember it<li> Add the updated header to your outgoing requests<li> When you get this 409 error message, resend your request with the updated header</ol></p><p>This requirement has been added to help prevent <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p><p><code>X-Transmission-Session-Id: JfGpv8Gve4k933X1O210w564NznSnsIf5HQWfQMqjxcA5umE</code></p>
+[TransmissionApi 2016-01-14 01:01:38] -----------------
+[TransmissionApi 2016-01-14 01:01:38] response.body:
+[TransmissionApi 2016-01-14 01:01:38] <h1>409: Conflict</h1><p>Your request had an invalid session-id header.</p><p>To fix this, follow these steps:<ol><li> When reading a response, get its X-Transmission-Session-Id header and remember it<li> Add the updated header to your outgoing requests<li> When you get this 409 error message, resend your request with the updated header</ol></p><p>This requirement has been added to help prevent <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p><p><code>X-Transmission-Session-Id: JfGpv8Gve4k933X1O210w564NznSnsIf5HQWfQMqjxcA5umE</code></p>
+[TransmissionApi 2016-01-14 01:01:38] -----------------
+[TransmissionApi 2016-01-14 01:01:38] response.headers:
+[TransmissionApi 2016-01-14 01:01:38] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  x-transmission-session-id:
+  - JfGpv8Gve4k933X1O210w564NznSnsIf5HQWfQMqjxcA5umE
+  date:
+  - Thu, 14 Jan 2016 06:01:38 GMT
+  content-length:
+  - '580'
+  content-type:
+  - text/html; charset=ISO-8859-1
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:01:38] ------------------
+[TransmissionApi 2016-01-14 01:01:38] changing session_id
+[TransmissionApi 2016-01-14 01:01:38] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:01:38] post_body:
+[TransmissionApi 2016-01-14 01:01:38] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:01:38] ------------------
+[TransmissionApi 2016-01-14 01:01:38] response.code: 200
+[TransmissionApi 2016-01-14 01:01:38] response.message: OK
+[TransmissionApi 2016-01-14 01:01:38] response.body_raw:
+[TransmissionApi 2016-01-14 01:01:38] {"arguments":{"torrents":[{"addedDate":1452733587,"files":[{"bytesCompleted":7160689,"length":7160689,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3"}],"id":1,"isFinished":false,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3","percentDone":1,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":7160689},{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:01:38] -----------------
+[TransmissionApi 2016-01-14 01:01:38] response.body:
+[TransmissionApi 2016-01-14 01:01:38] ---
+arguments:
+  torrents:
+  - addedDate: 1452733587
+    files:
+    - bytesCompleted: 7160689
+      length: 7160689
+      name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    id: 1
+    isFinished: false
+    name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    percentDone: 1
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 7160689
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:01:38] -----------------
+[TransmissionApi 2016-01-14 01:01:38] response.headers:
+[TransmissionApi 2016-01-14 01:01:38] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:01:38 GMT
+  content-length:
+  - '624'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:01:38] ------------------
+[TransmissionApi 2016-01-14 01:01:47] get_torrents
+[TransmissionApi 2016-01-14 01:01:47] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:01:47] post_body:
+[TransmissionApi 2016-01-14 01:01:47] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:01:47] ------------------
+[TransmissionApi 2016-01-14 01:01:47] response.code: 200
+[TransmissionApi 2016-01-14 01:01:47] response.message: OK
+[TransmissionApi 2016-01-14 01:01:47] response.body_raw:
+[TransmissionApi 2016-01-14 01:01:47] {"arguments":{"torrents":[{"addedDate":1452733587,"files":[{"bytesCompleted":7160689,"length":7160689,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3"}],"id":1,"isFinished":false,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3","percentDone":1,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":7160689},{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:01:47] -----------------
+[TransmissionApi 2016-01-14 01:01:47] response.body:
+[TransmissionApi 2016-01-14 01:01:47] ---
+arguments:
+  torrents:
+  - addedDate: 1452733587
+    files:
+    - bytesCompleted: 7160689
+      length: 7160689
+      name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    id: 1
+    isFinished: false
+    name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    percentDone: 1
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 7160689
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:01:47] -----------------
+[TransmissionApi 2016-01-14 01:01:47] response.headers:
+[TransmissionApi 2016-01-14 01:01:47] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:01:47 GMT
+  content-length:
+  - '624'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:01:47] ------------------
+[TransmissionApi 2016-01-14 01:01:57] get_torrents
+[TransmissionApi 2016-01-14 01:01:57] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:01:57] post_body:
+[TransmissionApi 2016-01-14 01:01:57] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:01:57] ------------------
+[TransmissionApi 2016-01-14 01:01:57] response.code: 200
+[TransmissionApi 2016-01-14 01:01:57] response.message: OK
+[TransmissionApi 2016-01-14 01:01:57] response.body_raw:
+[TransmissionApi 2016-01-14 01:01:57] {"arguments":{"torrents":[{"addedDate":1452733587,"files":[{"bytesCompleted":7160689,"length":7160689,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3"}],"id":1,"isFinished":false,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3","percentDone":1,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":7160689},{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:01:57] -----------------
+[TransmissionApi 2016-01-14 01:01:57] response.body:
+[TransmissionApi 2016-01-14 01:01:57] ---
+arguments:
+  torrents:
+  - addedDate: 1452733587
+    files:
+    - bytesCompleted: 7160689
+      length: 7160689
+      name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    id: 1
+    isFinished: false
+    name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    percentDone: 1
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 7160689
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:01:57] -----------------
+[TransmissionApi 2016-01-14 01:01:57] response.headers:
+[TransmissionApi 2016-01-14 01:01:57] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:01:57 GMT
+  content-length:
+  - '624'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:01:57] ------------------
+[TransmissionApi 2016-01-14 01:02:07] get_torrents
+[TransmissionApi 2016-01-14 01:02:07] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:07] post_body:
+[TransmissionApi 2016-01-14 01:02:07] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:02:07] ------------------
+[TransmissionApi 2016-01-14 01:02:07] response.code: 200
+[TransmissionApi 2016-01-14 01:02:07] response.message: OK
+[TransmissionApi 2016-01-14 01:02:07] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:07] {"arguments":{"torrents":[{"addedDate":1452733587,"files":[{"bytesCompleted":7160689,"length":7160689,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3"}],"id":1,"isFinished":false,"name":"Major Lazer x DJ Snake feat. M\u00d8 - Lean On.mp3","percentDone":1,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":7160689},{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:07] -----------------
+[TransmissionApi 2016-01-14 01:02:07] response.body:
+[TransmissionApi 2016-01-14 01:02:07] ---
+arguments:
+  torrents:
+  - addedDate: 1452733587
+    files:
+    - bytesCompleted: 7160689
+      length: 7160689
+      name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    id: 1
+    isFinished: false
+    name: Major Lazer x DJ Snake feat. MØ - Lean On.mp3
+    percentDone: 1
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 7160689
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:07] -----------------
+[TransmissionApi 2016-01-14 01:02:07] response.headers:
+[TransmissionApi 2016-01-14 01:02:07] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:07 GMT
+  content-length:
+  - '624'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:07] ------------------
+[TransmissionApi 2016-01-14 01:02:13] remove_torrent: 1
+[TransmissionApi 2016-01-14 01:02:13] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:13] post_body:
+[TransmissionApi 2016-01-14 01:02:13] ---
+method: torrent-remove
+arguments:
+  ids:
+  - 1
+  delete-local-data: false
+[TransmissionApi 2016-01-14 01:02:13] ------------------
+[TransmissionApi 2016-01-14 01:02:13] response.code: 200
+[TransmissionApi 2016-01-14 01:02:13] response.message: OK
+[TransmissionApi 2016-01-14 01:02:13] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:13] {"arguments":{},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:13] -----------------
+[TransmissionApi 2016-01-14 01:02:13] response.body:
+[TransmissionApi 2016-01-14 01:02:13] ---
+arguments: {}
+result: success
+[TransmissionApi 2016-01-14 01:02:13] -----------------
+[TransmissionApi 2016-01-14 01:02:13] response.headers:
+[TransmissionApi 2016-01-14 01:02:13] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:13 GMT
+  content-length:
+  - '36'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:13] ------------------
+[TransmissionApi 2016-01-14 01:02:17] get_torrents
+[TransmissionApi 2016-01-14 01:02:17] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:17] post_body:
+[TransmissionApi 2016-01-14 01:02:17] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:02:17] ------------------
+[TransmissionApi 2016-01-14 01:02:17] response.code: 200
+[TransmissionApi 2016-01-14 01:02:17] response.message: OK
+[TransmissionApi 2016-01-14 01:02:17] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:17] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:17] -----------------
+[TransmissionApi 2016-01-14 01:02:17] response.body:
+[TransmissionApi 2016-01-14 01:02:17] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:17] -----------------
+[TransmissionApi 2016-01-14 01:02:17] response.headers:
+[TransmissionApi 2016-01-14 01:02:17] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:17 GMT
+  content-length:
+  - '320'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:17] ------------------
+[TransmissionApi 2016-01-14 01:02:24] get_torrent: 1
+[TransmissionApi 2016-01-14 01:02:24] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:24] post_body:
+[TransmissionApi 2016-01-14 01:02:24] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+  ids:
+  - 1
+[TransmissionApi 2016-01-14 01:02:24] ------------------
+[TransmissionApi 2016-01-14 01:02:24] response.code: 200
+[TransmissionApi 2016-01-14 01:02:24] response.message: OK
+[TransmissionApi 2016-01-14 01:02:24] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:24] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:24] -----------------
+[TransmissionApi 2016-01-14 01:02:24] response.body:
+[TransmissionApi 2016-01-14 01:02:24] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:02:24] -----------------
+[TransmissionApi 2016-01-14 01:02:24] response.headers:
+[TransmissionApi 2016-01-14 01:02:24] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:24 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:24] ------------------
+[TransmissionApi 2016-01-14 01:02:27] get_torrents
+[TransmissionApi 2016-01-14 01:02:27] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:27] post_body:
+[TransmissionApi 2016-01-14 01:02:27] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:02:27] ------------------
+[TransmissionApi 2016-01-14 01:02:27] response.code: 200
+[TransmissionApi 2016-01-14 01:02:27] response.message: OK
+[TransmissionApi 2016-01-14 01:02:27] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:27] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:27] -----------------
+[TransmissionApi 2016-01-14 01:02:27] response.body:
+[TransmissionApi 2016-01-14 01:02:27] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:27] -----------------
+[TransmissionApi 2016-01-14 01:02:27] response.headers:
+[TransmissionApi 2016-01-14 01:02:27] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:27 GMT
+  content-length:
+  - '320'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:27] ------------------
+[TransmissionApi 2016-01-14 01:02:37] get_torrents
+[TransmissionApi 2016-01-14 01:02:37] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:37] post_body:
+[TransmissionApi 2016-01-14 01:02:37] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:02:37] ------------------
+[TransmissionApi 2016-01-14 01:02:37] response.code: 200
+[TransmissionApi 2016-01-14 01:02:37] response.message: OK
+[TransmissionApi 2016-01-14 01:02:37] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:37] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:37] -----------------
+[TransmissionApi 2016-01-14 01:02:37] response.body:
+[TransmissionApi 2016-01-14 01:02:37] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:37] -----------------
+[TransmissionApi 2016-01-14 01:02:37] response.headers:
+[TransmissionApi 2016-01-14 01:02:37] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:37 GMT
+  content-length:
+  - '320'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:37] ------------------
+[TransmissionApi 2016-01-14 01:02:39] get_torrent: 2
+[TransmissionApi 2016-01-14 01:02:39] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:39] post_body:
+[TransmissionApi 2016-01-14 01:02:39] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+  ids:
+  - 2
+[TransmissionApi 2016-01-14 01:02:39] ------------------
+[TransmissionApi 2016-01-14 01:02:39] response.code: 200
+[TransmissionApi 2016-01-14 01:02:39] response.message: OK
+[TransmissionApi 2016-01-14 01:02:39] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:39] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:39] -----------------
+[TransmissionApi 2016-01-14 01:02:39] response.body:
+[TransmissionApi 2016-01-14 01:02:39] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:39] -----------------
+[TransmissionApi 2016-01-14 01:02:39] response.headers:
+[TransmissionApi 2016-01-14 01:02:39] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:39 GMT
+  content-length:
+  - '320'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:39] ------------------
+[TransmissionApi 2016-01-14 01:02:45] resume_torrent: 2
+[TransmissionApi 2016-01-14 01:02:45] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:45] post_body:
+[TransmissionApi 2016-01-14 01:02:45] ---
+method: torrent-start
+arguments:
+  ids:
+  - 2
+[TransmissionApi 2016-01-14 01:02:45] ------------------
+[TransmissionApi 2016-01-14 01:02:45] response.code: 200
+[TransmissionApi 2016-01-14 01:02:45] response.message: OK
+[TransmissionApi 2016-01-14 01:02:45] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:45] {"arguments":{},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:45] -----------------
+[TransmissionApi 2016-01-14 01:02:45] response.body:
+[TransmissionApi 2016-01-14 01:02:45] ---
+arguments: {}
+result: success
+[TransmissionApi 2016-01-14 01:02:45] -----------------
+[TransmissionApi 2016-01-14 01:02:45] response.headers:
+[TransmissionApi 2016-01-14 01:02:45] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:45 GMT
+  content-length:
+  - '36'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:45] ------------------
+[TransmissionApi 2016-01-14 01:02:47] get_torrents
+[TransmissionApi 2016-01-14 01:02:47] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:47] post_body:
+[TransmissionApi 2016-01-14 01:02:47] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:02:47] ------------------
+[TransmissionApi 2016-01-14 01:02:47] response.code: 200
+[TransmissionApi 2016-01-14 01:02:47] response.message: OK
+[TransmissionApi 2016-01-14 01:02:47] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:47] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":44892160,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0677,"rateDownload":0,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:47] -----------------
+[TransmissionApi 2016-01-14 01:02:47] response.body:
+[TransmissionApi 2016-01-14 01:02:47] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44892160
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0677
+    rateDownload: 0
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:47] -----------------
+[TransmissionApi 2016-01-14 01:02:47] response.headers:
+[TransmissionApi 2016-01-14 01:02:47] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:47 GMT
+  content-length:
+  - '320'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:47] ------------------
+[TransmissionApi 2016-01-14 01:02:57] get_torrents
+[TransmissionApi 2016-01-14 01:02:57] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:02:57] post_body:
+[TransmissionApi 2016-01-14 01:02:57] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:02:57] ------------------
+[TransmissionApi 2016-01-14 01:02:57] response.code: 200
+[TransmissionApi 2016-01-14 01:02:57] response.message: OK
+[TransmissionApi 2016-01-14 01:02:57] response.body_raw:
+[TransmissionApi 2016-01-14 01:02:57] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":44941312,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0678,"rateDownload":39000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:02:57] -----------------
+[TransmissionApi 2016-01-14 01:02:57] response.body:
+[TransmissionApi 2016-01-14 01:02:57] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 44941312
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0678
+    rateDownload: 39000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:02:57] -----------------
+[TransmissionApi 2016-01-14 01:02:57] response.headers:
+[TransmissionApi 2016-01-14 01:02:57] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:02:57 GMT
+  content-length:
+  - '324'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:02:57] ------------------
+[TransmissionApi 2016-01-14 01:03:07] get_torrents
+[TransmissionApi 2016-01-14 01:03:07] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:07] post_body:
+[TransmissionApi 2016-01-14 01:03:07] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:07] ------------------
+[TransmissionApi 2016-01-14 01:03:07] response.code: 200
+[TransmissionApi 2016-01-14 01:03:07] response.message: OK
+[TransmissionApi 2016-01-14 01:03:07] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:07] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":45924352,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0692,"rateDownload":114000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:07] -----------------
+[TransmissionApi 2016-01-14 01:03:07] response.body:
+[TransmissionApi 2016-01-14 01:03:07] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 45924352
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0692
+    rateDownload: 114000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:07] -----------------
+[TransmissionApi 2016-01-14 01:03:07] response.headers:
+[TransmissionApi 2016-01-14 01:03:07] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:07 GMT
+  content-length:
+  - '325'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:07] ------------------
+[TransmissionApi 2016-01-14 01:03:17] get_torrents
+[TransmissionApi 2016-01-14 01:03:17] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:17] post_body:
+[TransmissionApi 2016-01-14 01:03:17] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:17] ------------------
+[TransmissionApi 2016-01-14 01:03:17] response.code: 200
+[TransmissionApi 2016-01-14 01:03:17] response.message: OK
+[TransmissionApi 2016-01-14 01:03:17] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:17] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":47300608,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0713,"rateDownload":172000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:17] -----------------
+[TransmissionApi 2016-01-14 01:03:17] response.body:
+[TransmissionApi 2016-01-14 01:03:17] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 47300608
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0713
+    rateDownload: 172000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:17] -----------------
+[TransmissionApi 2016-01-14 01:03:17] response.headers:
+[TransmissionApi 2016-01-14 01:03:17] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:17 GMT
+  content-length:
+  - '325'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:17] ------------------
+[TransmissionApi 2016-01-14 01:03:27] get_torrents
+[TransmissionApi 2016-01-14 01:03:27] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:27] post_body:
+[TransmissionApi 2016-01-14 01:03:27] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:27] ------------------
+[TransmissionApi 2016-01-14 01:03:27] response.code: 200
+[TransmissionApi 2016-01-14 01:03:27] response.message: OK
+[TransmissionApi 2016-01-14 01:03:27] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:27] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":48857088,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0737,"rateDownload":116000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:27] -----------------
+[TransmissionApi 2016-01-14 01:03:27] response.body:
+[TransmissionApi 2016-01-14 01:03:27] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 48857088
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0737
+    rateDownload: 116000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:27] -----------------
+[TransmissionApi 2016-01-14 01:03:27] response.headers:
+[TransmissionApi 2016-01-14 01:03:27] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:27 GMT
+  content-length:
+  - '325'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:27] ------------------
+[TransmissionApi 2016-01-14 01:03:37] get_torrents
+[TransmissionApi 2016-01-14 01:03:37] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:37] post_body:
+[TransmissionApi 2016-01-14 01:03:37] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:37] ------------------
+[TransmissionApi 2016-01-14 01:03:37] response.code: 200
+[TransmissionApi 2016-01-14 01:03:37] response.message: OK
+[TransmissionApi 2016-01-14 01:03:37] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:37] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":50987008,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.0769,"rateDownload":144000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:37] -----------------
+[TransmissionApi 2016-01-14 01:03:37] response.body:
+[TransmissionApi 2016-01-14 01:03:37] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 50987008
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.0769
+    rateDownload: 144000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:37] -----------------
+[TransmissionApi 2016-01-14 01:03:37] response.headers:
+[TransmissionApi 2016-01-14 01:03:37] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:37 GMT
+  content-length:
+  - '325'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:37] ------------------
+[TransmissionApi 2016-01-14 01:03:47] get_torrents
+[TransmissionApi 2016-01-14 01:03:47] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:47] post_body:
+[TransmissionApi 2016-01-14 01:03:47] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:47] ------------------
+[TransmissionApi 2016-01-14 01:03:47] response.code: 200
+[TransmissionApi 2016-01-14 01:03:47] response.message: OK
+[TransmissionApi 2016-01-14 01:03:47] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:47] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":103170048,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.1556,"rateDownload":6101000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:47] -----------------
+[TransmissionApi 2016-01-14 01:03:47] response.body:
+[TransmissionApi 2016-01-14 01:03:47] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 103170048
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.1556
+    rateDownload: 6101000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:47] -----------------
+[TransmissionApi 2016-01-14 01:03:47] response.headers:
+[TransmissionApi 2016-01-14 01:03:47] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:47 GMT
+  content-length:
+  - '327'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:47] ------------------
+[TransmissionApi 2016-01-14 01:03:48] get_torrents
+[TransmissionApi 2016-01-14 01:03:48] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:48] post_body:
+[TransmissionApi 2016-01-14 01:03:48] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:48] ------------------
+[TransmissionApi 2016-01-14 01:03:48] response.code: 200
+[TransmissionApi 2016-01-14 01:03:48] response.message: OK
+[TransmissionApi 2016-01-14 01:03:48] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:48] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":108281856,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.1633,"rateDownload":5799000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:48] -----------------
+[TransmissionApi 2016-01-14 01:03:48] response.body:
+[TransmissionApi 2016-01-14 01:03:48] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 108281856
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.1633
+    rateDownload: 5799000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:48] -----------------
+[TransmissionApi 2016-01-14 01:03:48] response.headers:
+[TransmissionApi 2016-01-14 01:03:48] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:48 GMT
+  content-length:
+  - '327'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:48] ------------------
+[TransmissionApi 2016-01-14 01:03:49] get_torrents
+[TransmissionApi 2016-01-14 01:03:49] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:49] post_body:
+[TransmissionApi 2016-01-14 01:03:49] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:49] ------------------
+[TransmissionApi 2016-01-14 01:03:49] response.code: 200
+[TransmissionApi 2016-01-14 01:03:49] response.message: OK
+[TransmissionApi 2016-01-14 01:03:49] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:49] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":115179520,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.1738,"rateDownload":5923000,"rateUpload":0,"status":4,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:49] -----------------
+[TransmissionApi 2016-01-14 01:03:49] response.body:
+[TransmissionApi 2016-01-14 01:03:49] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 115179520
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.1738
+    rateDownload: 5923000
+    rateUpload: 0
+    status: 4
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:49] -----------------
+[TransmissionApi 2016-01-14 01:03:49] response.headers:
+[TransmissionApi 2016-01-14 01:03:49] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:49 GMT
+  content-length:
+  - '327'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:49] ------------------
+[TransmissionApi 2016-01-14 01:03:59] get_torrents
+[TransmissionApi 2016-01-14 01:03:59] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:03:59] post_body:
+[TransmissionApi 2016-01-14 01:03:59] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:03:59] ------------------
+[TransmissionApi 2016-01-14 01:03:59] response.code: 200
+[TransmissionApi 2016-01-14 01:03:59] response.message: OK
+[TransmissionApi 2016-01-14 01:03:59] response.body_raw:
+[TransmissionApi 2016-01-14 01:03:59] {"arguments":{"torrents":[{"addedDate":1452739232,"files":[{"bytesCompleted":139476992,"length":662700032,"name":"ubuntu-15.10-server-amd64.iso"}],"id":2,"isFinished":false,"name":"ubuntu-15.10-server-amd64.iso","percentDone":0.2104,"rateDownload":0,"rateUpload":0,"status":0,"totalSize":662700032}]},"result":"success"}
+[TransmissionApi 2016-01-14 01:03:59] -----------------
+[TransmissionApi 2016-01-14 01:03:59] response.body:
+[TransmissionApi 2016-01-14 01:03:59] ---
+arguments:
+  torrents:
+  - addedDate: 1452739232
+    files:
+    - bytesCompleted: 139476992
+      length: 662700032
+      name: ubuntu-15.10-server-amd64.iso
+    id: 2
+    isFinished: false
+    name: ubuntu-15.10-server-amd64.iso
+    percentDone: 0.2104
+    rateDownload: 0
+    rateUpload: 0
+    status: 0
+    totalSize: 662700032
+result: success
+[TransmissionApi 2016-01-14 01:03:59] -----------------
+[TransmissionApi 2016-01-14 01:03:59] response.headers:
+[TransmissionApi 2016-01-14 01:03:59] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:03:59 GMT
+  content-length:
+  - '321'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:03:59] ------------------
+[TransmissionApi 2016-01-14 01:04:05] remove_torrent: 2
+[TransmissionApi 2016-01-14 01:04:05] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:05] post_body:
+[TransmissionApi 2016-01-14 01:04:05] ---
+method: torrent-remove
+arguments:
+  ids:
+  - 2
+  delete-local-data: true
+[TransmissionApi 2016-01-14 01:04:05] ------------------
+[TransmissionApi 2016-01-14 01:04:05] response.code: 200
+[TransmissionApi 2016-01-14 01:04:05] response.message: OK
+[TransmissionApi 2016-01-14 01:04:05] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:05] {"arguments":{},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:05] -----------------
+[TransmissionApi 2016-01-14 01:04:05] response.body:
+[TransmissionApi 2016-01-14 01:04:05] ---
+arguments: {}
+result: success
+[TransmissionApi 2016-01-14 01:04:05] -----------------
+[TransmissionApi 2016-01-14 01:04:05] response.headers:
+[TransmissionApi 2016-01-14 01:04:05] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:05 GMT
+  content-length:
+  - '36'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:05] ------------------
+[TransmissionApi 2016-01-14 01:04:09] get_torrents
+[TransmissionApi 2016-01-14 01:04:09] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:09] post_body:
+[TransmissionApi 2016-01-14 01:04:09] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:09] ------------------
+[TransmissionApi 2016-01-14 01:04:09] response.code: 200
+[TransmissionApi 2016-01-14 01:04:09] response.message: OK
+[TransmissionApi 2016-01-14 01:04:09] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:09] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:09] -----------------
+[TransmissionApi 2016-01-14 01:04:09] response.body:
+[TransmissionApi 2016-01-14 01:04:09] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:09] -----------------
+[TransmissionApi 2016-01-14 01:04:09] response.headers:
+[TransmissionApi 2016-01-14 01:04:09] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:09 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:09] ------------------
+[TransmissionApi 2016-01-14 01:04:19] get_torrents
+[TransmissionApi 2016-01-14 01:04:19] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:19] post_body:
+[TransmissionApi 2016-01-14 01:04:19] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:19] ------------------
+[TransmissionApi 2016-01-14 01:04:19] response.code: 409
+[TransmissionApi 2016-01-14 01:04:19] response.message: Conflict
+[TransmissionApi 2016-01-14 01:04:19] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:19] <h1>409: Conflict</h1><p>Your request had an invalid session-id header.</p><p>To fix this, follow these steps:<ol><li> When reading a response, get its X-Transmission-Session-Id header and remember it<li> Add the updated header to your outgoing requests<li> When you get this 409 error message, resend your request with the updated header</ol></p><p>This requirement has been added to help prevent <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p><p><code>X-Transmission-Session-Id: QUlozw6AgD12fk4q4sHA74JIbB50QBmFA0AJeO80ko4QaJCX</code></p>
+[TransmissionApi 2016-01-14 01:04:19] -----------------
+[TransmissionApi 2016-01-14 01:04:19] response.body:
+[TransmissionApi 2016-01-14 01:04:19] <h1>409: Conflict</h1><p>Your request had an invalid session-id header.</p><p>To fix this, follow these steps:<ol><li> When reading a response, get its X-Transmission-Session-Id header and remember it<li> Add the updated header to your outgoing requests<li> When you get this 409 error message, resend your request with the updated header</ol></p><p>This requirement has been added to help prevent <a href="http://en.wikipedia.org/wiki/Cross-site_request_forgery">CSRF</a> attacks.</p><p><code>X-Transmission-Session-Id: QUlozw6AgD12fk4q4sHA74JIbB50QBmFA0AJeO80ko4QaJCX</code></p>
+[TransmissionApi 2016-01-14 01:04:19] -----------------
+[TransmissionApi 2016-01-14 01:04:19] response.headers:
+[TransmissionApi 2016-01-14 01:04:19] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  x-transmission-session-id:
+  - QUlozw6AgD12fk4q4sHA74JIbB50QBmFA0AJeO80ko4QaJCX
+  date:
+  - Thu, 14 Jan 2016 06:04:19 GMT
+  content-length:
+  - '580'
+  content-type:
+  - text/html; charset=ISO-8859-1
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:19] ------------------
+[TransmissionApi 2016-01-14 01:04:19] changing session_id
+[TransmissionApi 2016-01-14 01:04:19] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:19] post_body:
+[TransmissionApi 2016-01-14 01:04:19] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:19] ------------------
+[TransmissionApi 2016-01-14 01:04:19] response.code: 200
+[TransmissionApi 2016-01-14 01:04:19] response.message: OK
+[TransmissionApi 2016-01-14 01:04:19] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:19] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:19] -----------------
+[TransmissionApi 2016-01-14 01:04:19] response.body:
+[TransmissionApi 2016-01-14 01:04:19] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:19] -----------------
+[TransmissionApi 2016-01-14 01:04:19] response.headers:
+[TransmissionApi 2016-01-14 01:04:19] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:19 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:19] ------------------
+[TransmissionApi 2016-01-14 01:04:19] get_torrents
+[TransmissionApi 2016-01-14 01:04:19] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:19] post_body:
+[TransmissionApi 2016-01-14 01:04:19] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:19] ------------------
+[TransmissionApi 2016-01-14 01:04:19] response.code: 200
+[TransmissionApi 2016-01-14 01:04:19] response.message: OK
+[TransmissionApi 2016-01-14 01:04:19] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:19] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:19] -----------------
+[TransmissionApi 2016-01-14 01:04:19] response.body:
+[TransmissionApi 2016-01-14 01:04:19] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:19] -----------------
+[TransmissionApi 2016-01-14 01:04:19] response.headers:
+[TransmissionApi 2016-01-14 01:04:19] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:19 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:19] ------------------
+[TransmissionApi 2016-01-14 01:04:25] get_torrents
+[TransmissionApi 2016-01-14 01:04:25] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:25] post_body:
+[TransmissionApi 2016-01-14 01:04:25] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:25] ------------------
+[TransmissionApi 2016-01-14 01:04:25] response.code: 200
+[TransmissionApi 2016-01-14 01:04:25] response.message: OK
+[TransmissionApi 2016-01-14 01:04:25] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:25] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:25] -----------------
+[TransmissionApi 2016-01-14 01:04:25] response.body:
+[TransmissionApi 2016-01-14 01:04:25] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:25] -----------------
+[TransmissionApi 2016-01-14 01:04:25] response.headers:
+[TransmissionApi 2016-01-14 01:04:25] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:25 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:25] ------------------
+[TransmissionApi 2016-01-14 01:04:29] get_torrents
+[TransmissionApi 2016-01-14 01:04:29] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:29] post_body:
+[TransmissionApi 2016-01-14 01:04:29] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:29] ------------------
+[TransmissionApi 2016-01-14 01:04:29] response.code: 200
+[TransmissionApi 2016-01-14 01:04:29] response.message: OK
+[TransmissionApi 2016-01-14 01:04:29] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:29] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:29] -----------------
+[TransmissionApi 2016-01-14 01:04:29] response.body:
+[TransmissionApi 2016-01-14 01:04:29] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:29] -----------------
+[TransmissionApi 2016-01-14 01:04:29] response.headers:
+[TransmissionApi 2016-01-14 01:04:29] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:29 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:29] ------------------
+[TransmissionApi 2016-01-14 01:04:31] get_torrents
+[TransmissionApi 2016-01-14 01:04:31] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:31] post_body:
+[TransmissionApi 2016-01-14 01:04:31] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:31] ------------------
+[TransmissionApi 2016-01-14 01:04:31] response.code: 200
+[TransmissionApi 2016-01-14 01:04:31] response.message: OK
+[TransmissionApi 2016-01-14 01:04:31] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:31] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:31] -----------------
+[TransmissionApi 2016-01-14 01:04:31] response.body:
+[TransmissionApi 2016-01-14 01:04:31] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:31] -----------------
+[TransmissionApi 2016-01-14 01:04:31] response.headers:
+[TransmissionApi 2016-01-14 01:04:31] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:31 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:31] ------------------
+[TransmissionApi 2016-01-14 01:04:38] get_torrents
+[TransmissionApi 2016-01-14 01:04:38] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:38] post_body:
+[TransmissionApi 2016-01-14 01:04:38] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:38] ------------------
+[TransmissionApi 2016-01-14 01:04:38] response.code: 200
+[TransmissionApi 2016-01-14 01:04:38] response.message: OK
+[TransmissionApi 2016-01-14 01:04:38] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:38] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:38] -----------------
+[TransmissionApi 2016-01-14 01:04:38] response.body:
+[TransmissionApi 2016-01-14 01:04:38] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:38] -----------------
+[TransmissionApi 2016-01-14 01:04:38] response.headers:
+[TransmissionApi 2016-01-14 01:04:38] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:38 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:38] ------------------
+[TransmissionApi 2016-01-14 01:04:42] get_torrents
+[TransmissionApi 2016-01-14 01:04:42] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:04:42] post_body:
+[TransmissionApi 2016-01-14 01:04:42] ---
+method: torrent-get
+arguments:
+  fields:
+  - id
+  - name
+  - totalSize
+  - addedDate
+  - isFinished
+  - rateDownload
+  - rateUpload
+  - percentDone
+  - status
+  - files
+[TransmissionApi 2016-01-14 01:04:42] ------------------
+[TransmissionApi 2016-01-14 01:04:42] response.code: 200
+[TransmissionApi 2016-01-14 01:04:42] response.message: OK
+[TransmissionApi 2016-01-14 01:04:42] response.body_raw:
+[TransmissionApi 2016-01-14 01:04:42] {"arguments":{"torrents":[]},"result":"success"}
+[TransmissionApi 2016-01-14 01:04:42] -----------------
+[TransmissionApi 2016-01-14 01:04:42] response.body:
+[TransmissionApi 2016-01-14 01:04:42] ---
+arguments:
+  torrents: []
+result: success
+[TransmissionApi 2016-01-14 01:04:42] -----------------
+[TransmissionApi 2016-01-14 01:04:42] response.headers:
+[TransmissionApi 2016-01-14 01:04:42] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:04:42 GMT
+  content-length:
+  - '49'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:04:42] ------------------
+[TransmissionApi 2016-01-14 01:09:14] add_torrent: https://torcache.net/torrent/3B2D47227C72F22C27743695FA0EB6179EE89B8C.torrent?title=[kat.cr]computer.science.handbook
+[TransmissionApi 2016-01-14 01:09:14] url: http://127.0.0.1:9091/transmission/rpc
+[TransmissionApi 2016-01-14 01:09:14] post_body:
+[TransmissionApi 2016-01-14 01:09:14] ---
+method: torrent-add
+arguments:
+  filename: https://torcache.net/torrent/3B2D47227C72F22C27743695FA0EB6179EE89B8C.torrent?title=[kat.cr]computer.science.handbook
+[TransmissionApi 2016-01-14 01:09:14] ------------------
+[TransmissionApi 2016-01-14 01:09:17] response.code: 200
+[TransmissionApi 2016-01-14 01:09:17] response.message: OK
+[TransmissionApi 2016-01-14 01:09:17] response.body_raw:
+[TransmissionApi 2016-01-14 01:09:17] {"arguments":{"torrent-added":{"hashString":"3b2d47227c72f22c27743695fa0eb6179ee89b8c","id":3,"name":"Computer Science Handbook"}},"result":"success"}
+[TransmissionApi 2016-01-14 01:09:17] -----------------
+[TransmissionApi 2016-01-14 01:09:17] response.body:
+[TransmissionApi 2016-01-14 01:09:17] ---
+arguments:
+  torrent-added:
+    hashString: 3b2d47227c72f22c27743695fa0eb6179ee89b8c
+    id: 3
+    name: Computer Science Handbook
+result: success
+[TransmissionApi 2016-01-14 01:09:17] -----------------
+[TransmissionApi 2016-01-14 01:09:17] response.headers:
+[TransmissionApi 2016-01-14 01:09:17] --- !ruby/object:HTTParty::Response::Headers
+header:
+  server:
+  - Transmission
+  content-type:
+  - application/json; charset=UTF-8
+  date:
+  - Thu, 14 Jan 2016 06:09:17 GMT
+  content-length:
+  - '151'
+  connection:
+  - close
+[TransmissionApi 2016-01-14 01:09:17] ------------------

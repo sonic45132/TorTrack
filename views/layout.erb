@@ -8,8 +8,50 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" >
+    <link rel="stylesheet" href="css/jquery-ui.css" >
+
+    <style>
+      #feedback { font-size: 1.4em; }
+      #torrent-list .ui-selecting { background: #FECA40; }
+      #torrent-list .ui-selected { background: #F39814; color: white; }
+      .torrent-info {
+        border: 1px solid #DDD;
+        height:100%;
+      }
+      .row {
+        height:100%;
+      }
+      body, html, .container-fluid {
+        min-height:98%;
+        height:98%;
+      }
+    </style>
+
+
   </head>
   <body>
+    <nav class="navbar navbar-full navbar-light bg-faded">
+      <a class="navbar-brand" href="#">Tracker</a>
+      <ul class="nav navbar-nav">
+        <li id="nav-torrents" class="nav-item active">
+          <a class="nav-link" href="#">Torrents <span class="sr-only">(current)</span></a>
+        </li>
+        <li id="nav-files" class="nav-item">
+          <a class="nav-link" href="#">Files</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+      <form class="form-inline pull-xs-right">
+        <input class="form-control" type="text" placeholder="Search">
+        <button class="btn btn-success-outline" type="submit">Search</button>
+      </form>
+      <button id="nav-refresh" type="button" class="btn btn-success pull-xs-right m-r-1">Refresh</button>
+    </nav>
 
     <div class="container-fluid">
       <%= yield %>
@@ -17,6 +59,8 @@
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.js" ></script>
+    <script src="js/tortrack.js" ></script>
   </body>
 </html>

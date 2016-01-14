@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/sonic45132/TransmissionApi.git
+  revision: 281d20e42b0a51c2966635a7b122db811364a148
+  branch: master
+  specs:
+    transmission_api (0.0.12)
+      httparty (= 0.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,8 +23,6 @@ GEM
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
     tilt (2.0.2)
-    transmission_api (0.0.7)
-      httparty (= 0.9.0)
 
 PLATFORMS
   ruby
@@ -24,7 +30,4 @@ PLATFORMS
 DEPENDENCIES
   sass (~> 3.4, >= 3.4.21)
   sinatra (~> 1.4, >= 1.4.6)
-  transmission_api (~> 0.0.7)
-
-BUNDLED WITH
-   1.11.2
+  transmission_api!
