@@ -44,5 +44,6 @@ get '/torrent/:id/*' do
 end
 
 post '/torrent/create' do
-  transmission_api_client.create(params['url'])
+  torrent = transmission_api_client.create(params['url'])
+  "Created torrent id:#{torrent['id']}"
 end
