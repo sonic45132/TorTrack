@@ -24,11 +24,19 @@ end
 get '/torrent/:id/*' do
   case params['splat'].first
   when 'resume'
-    transmission_api_client.resume(params['id'].to_i)
-    "Resumed #{params['id']}"
+    if params['id'].to_i == 0 
+      transmission_api_client.resume_all()
+    else
+      transmission_api_client.resume(params['id'].to_i)
+      "Resumed #{params['id']}"
+    end
   when 'pause'
-    transmission_api_client.pause(params['id'].to_i)
-    "Paused #{params['id']}"
+    if params['id'].to_i == 0 
+      transmission_api_client.pause_all()
+    else
+      transmission_api_client.pause(params['id'].to_i)
+      "Paused #{params['id']}"
+    end
   when 'remove'
     transmission_api_client.remove(params['id'].to_i)
     "Removed #{params['id']}"

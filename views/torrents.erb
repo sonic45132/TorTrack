@@ -1,8 +1,20 @@
 <% @torrents.each do |torrent| %>
-  <a href ="#" class="list-group-item ui-widget-content" >
+  <a href ="#" id="<%= torrent["id"] %>" class="list-group-item ui-widget-content" >
     <span class="label label-default label-pill pull-xs-right"> <%= torrent["status"] %> </span>
     <span class="label label-default label-pill pull-xs-right"> <%= torrent["id"] %> </span>
     <%= torrent["name"] %>
-    <progress class="progress progress-success" value="<%= (torrent["percentDone"]*200).round %>" max="200"><%= (torrent["percentDone"]*200).round %></progress>
+    <%
+      case torrent['status'].to_i
+      when 0
+        status = 'warning'
+      when 4
+        status = 'info'
+      when 6
+        status = 'success'
+      else
+        status = 'danger'
+      end
+    %>
+    <progress class="progress progress-<%= status %>" value="<%= (torrent["percentDone"]*200).round %>" max="200"><%= (torrent["percentDone"]*200).round %></progress>
   </a>
 <% end %>
